@@ -20,7 +20,7 @@ CUDA是由NVIDIA开发的用于图形处理单元（GPU）上的通用计算的�
 将默认SSH端口22映射到宿主机6000端口，允许使用所有GPU资源：
 
 ```bash
-docker run -dit -p 6000:22 --gpu all --name container gpu-server:tagname 
+docker run -dit -p 6000:22 --gpus all --name container gpu-server:tagname 
 ```
 
 ---
