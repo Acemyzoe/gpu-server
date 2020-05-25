@@ -43,13 +43,23 @@ conda activate py37
 #安装docker
 curl -sSL https://get.daocloud.io/docker | sh 
 #安装nvidia-docker，见reference
-#克隆本项目构建docker镜像
+#克隆本项目构建docker镜像(视网络情况，有可能失败，推荐直接pull)
 git clone https://github.com/acemyzoe/gpu-server.git
 cd gpu-server/dist/{tagname}
-docker image build -t gpu-server:tagname .
+docker image build -t <image-name>:<tagname> .
 ```
+
+# PULL FROM ALIYUN
+
+```bash
+#docker镜像已上传至阿里云深圳服务器
+sudo docker pull registry.cn-shenzhen.aliyuncs.com/acemyzoe/gpus-server:v2.0
+```
+
+
 
 # Reference
 
 - [https://mirrors.tuna.tsinghua.edu.cn](https://mirrors.tuna.tsinghua.edu.cn)
 - [https://github.com/NVIDIA/nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
+- [docker指令](https://acemyzoe.github.io/_posts/2020-04-29-Docker-&-GPU-server/)

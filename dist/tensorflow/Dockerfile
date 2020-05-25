@@ -83,7 +83,7 @@ custom_channels:\n\
 && /root/anaconda3/envs/py37/bin/pip install pip -U \
 && /root/anaconda3/envs/py37/bin/pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-2.1.0-cp37-cp37m-manylinux2010_x86_64.whl \
 && /root/anaconda3/envs/py37/bin/pip install tensorflow_datasets \
-&& /root/anaconda3/envs/py37/bin/pip install keras
+&& /root/anaconda3/envs/py37/bin/pip install keras \
 #
 # enable root access with ssh: replace line starts with '#PermitRootLogin' or 'PermitRootLogin'
 #

@@ -10,4 +10,4 @@ sudo systemctl restart docker
 #############################
 
 ###### tf容器################
-docker run -it --gpus all -v /home/ace/project:/myproject -w /myproject --name tf tensorflow/tensorflow:latest-gpu bash
+docker run -it --gpus all -p 233:22 -v /home/ace/project:/myproject -w /myproject --name tf tensorflow/tensorflow:latest-gpu bash
